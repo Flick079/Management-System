@@ -1,0 +1,183 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.id-card {
+    width: 340px;
+    height: 550px;
+    /* Increased height to ensure all content fits */
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 0;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.id-header {
+    background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+    color: #fff;
+    padding: 12px 10px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.id-header img {
+    width: 55px;
+    height: auto;
+    margin-bottom: 6px;
+}
+
+.id-content {
+    padding: 10px 15px;
+    position: relative;
+}
+
+.id-photo-container {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #003366;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.id-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.id-info {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.id-info p {
+    margin: 5px 0;
+    line-height: 1.3;
+}
+
+.id-info .label {
+    font-weight: bold;
+    color: #003366;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 1px;
+}
+
+.id-info .value {
+    padding-left: 10px;
+}
+
+.employee-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #003366;
+    margin: 8px 0 5px;
+    text-align: center;
+}
+
+.id-qr {
+    margin: 10px auto;
+    text-align: center;
+    height: 90px;
+    /* Fixed height for QR code section */
+}
+
+.id-qr img {
+    width: 85px;
+    height: 85px;
+    border: 2px solid #003366;
+    padding: 2px;
+    background-color: white;
+}
+
+.id-footer {
+    background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+    color: #fff;
+    padding: 8px;
+    font-size: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.print-btn-container {
+    text-align: center;
+    margin: 10px 0 40px;
+    /* Ensure space for the button above footer */
+    position: relative;
+    z-index: 10;
+    clear: both;
+}
+
+.print-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.print-btn:hover {
+    background-color: #0066cc;
+}
+
+.id-number {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    color: #003366;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media print {
+    body {
+        background-color: white;
+        padding: 0;
+    }
+
+    .print-btn {
+        display: none;
+    }
+
+    .print-btn-container {
+        display: none;
+    }
+
+    .id-card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}

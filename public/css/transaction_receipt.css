@@ -1,0 +1,128 @@
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 10px;
+            padding: 0;
+            font-size: 12px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .receipt-container {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .receipt-header {
+            text-align: center;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 10px;
+        }
+        .receipt-header h1 {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .receipt-header img {
+            max-width: 80px;
+            height: auto;
+        }
+        .receipt-header p {
+            margin: 3px 0;
+            font-size: 11px;
+        }
+        .receipt-details {
+            margin-bottom: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: 11px;
+        }
+        .receipt-details p {
+            margin: 2px 0;
+            width: 48%;
+        }
+        .receipt-items {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 11px;
+        }
+        .receipt-items th {
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            padding: 4px;
+            font-size: 11px;
+        }
+        .receipt-items td {
+            padding: 4px;
+            border-bottom: 1px dotted #eee;
+        }
+        .receipt-items td:nth-child(2),
+        .receipt-items td:nth-child(3),
+        .receipt-items td:nth-child(4) {
+            text-align: right;
+        }
+        .receipt-totals {
+            width: 100%;
+            margin: 10px 0;
+            font-size: 11px;
+        }
+        .receipt-totals tr td:first-child {
+            text-align: left;
+        }
+        .receipt-totals tr td:last-child {
+            text-align: right;
+        }
+        .receipt-totals td {
+            padding: 3px 0;
+        }
+        .total-row {
+            font-weight: bold;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            font-size: 13px;
+        }
+        /* .discount-row {
+            color: #d9534f;
+        } */
+        .payment-info {
+            margin-top: 5px;
+            border-top: 1px dotted #eee;
+            padding-top: 5px;
+        }
+        .receipt-footer {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 10px;
+            color: #666;
+            border-top: 1px dashed #ccc;
+            padding-top: 10px;
+        }
+        .print-button {
+            display: block;
+            margin: 15px auto 5px;
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .print-button:hover {
+            background-color: #45a049;
+        }
+        @media print {
+            .print-button {
+                display: none;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .receipt-container {
+                border: none;
+                box-shadow: none;
+            }
+        }

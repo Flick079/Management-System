@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #3d3d52;
+    --text-color: aliceblue;
+    --sub-menu: #5a5a79;
+    --hover: #191924;
+}
+
+.sidebar {
+    padding-top: 1rem;
+    background-color: var(--primary-color);
+    width: 16rem;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    overflow-y: auto;
+
+    a {
+        color: var(--text-color);
+    }
+
+    a:focus {
+        color: var(--text-color);
+    }
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.3rem;
+    text-align: center;
+
+    h5 {
+        color: var(--text-color);
+    }
+}
+
+.logo img {
+    width: 6.5rem;
+}
+
+.nav-1 {
+    margin-top: 0.6rem;
+    display: flex;
+    gap: 1rem;
+}
+
+
+.nav-link:hover {
+    background-color: var(--hover);
+    color: var(--text-color);
+}
+
+
+.sub-menu {
+    background-color: var(--sub-menu);
+
+    a {
+        padding: 0.7rem 1.7rem;
+        font-size: small;
+    }
+
+}
+
+.logout {
+    a {
+        padding: 0.7rem;
+    }
+}
+
+.main-content {
+    margin-left: 13.5rem;
+    padding: 1rem;
+    height: 100%;
+}
+
+.logout {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        display: inline;
+    }
+}
+
+.logout button {
+    background: none;
+    color: var(--text-color);
+    border: none;
+}
+
+.container {
+    height: 100dvh;
+    gap: 1rem;
+}
+
+
+.content {
+    margin-left: 250px;
+    /* Same as the sidebar width */
+    padding: 20px;
+    max-width: 69rem;
+}
+
+.cart-btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-pos {
+    margin-left: 250px;
+}
+
+.searchControl:focus {
+    box-shadow: none;
+    /* Remove focus outline */
+}
+
+.pic {
+    margin-left: 1rem;
+}
+
+.btn-logout {
+    background: none;
+    border: none;
+    color: var(--text-color);
+}
+
+.employee_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* for image expanding */

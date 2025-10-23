@@ -1,0 +1,91 @@
+/* colors */
+:root {
+    --primary-color: #fffafa;
+    --secondary-color: lightgray;
+}
+
+/* body background color */
+
+body {
+    background-color: var(--primary-color);
+}
+
+/* login color */
+
+.login {
+    background-color: var(--primary-color);
+}
+
+/* errorhandler */
+
+.error {
+    background-color: lightcoral;
+    color: #fffafa;
+}
+
+
+/* sidebar styles*/
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    background-color: #343a40;
+    /* Dark background */
+    color: white;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    /* Remove focus outline */
+}
+
+
+
+
+.accordion-body {
+    padding: 0%;
+}
+
+.accordion-body a:hover {
+    background-color: #2d3236;
+}
+
+.content {
+    margin-left: 250px;
+    /* Same as the sidebar width */
+    padding: 20px;
+    max-width: 69rem;
+}
+
+.cart-btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-pos {
+    margin-left: 250px;
+}
+
+.searchControl:focus {
+    box-shadow: none;
+    /* Remove focus outline */
+}
+
+.pic {
+    margin-left: 1rem;
+}
