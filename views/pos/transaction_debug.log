@@ -1,0 +1,62 @@
+
+
+{"transactionId":"TEST-1744821053911","subtotal":100,"vat":12,"total":112,"method":"cash","amountTendered":150,"change":38,"items":[{"id":1,"name":"Test Product","quantity":1,"price":100,"originalPrice":100,"discountApplied":false}]}
+
+{"transactionId":"TEST-1744821070463","subtotal":100,"vat":12,"total":112,"method":"cash","amountTendered":150,"change":38,"items":[{"id":1,"name":"Test Product","quantity":1,"price":100,"originalPrice":100,"discountApplied":false}]}
+
+{"transactionId":"TEST-1744821999295","subtotal":100,"vat":12,"total":112,"method":"cash","amountTendered":150,"change":38,"items":[{"id":1,"name":"Test Product","quantity":1,"price":100,"originalPrice":100,"discountApplied":false}]}
+
+Array
+(
+    [transaction_id] => 76283
+    [cashier_id] => 2
+    [subtotal] => 150
+    [vat] => 18
+    [total] => 168
+    [payment_method] => cash
+    [amount_tendered] => 170
+    [change_amount] => 2
+    [discount_type] => none
+    [discount_amount] => 0
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 8
+                    [product_name] => Coke
+                    [quantity] => 5
+                    [price] => 30
+                    [original_price] => 30
+                    [discount_applied] => 
+                )
+
+        )
+
+)
+Array
+(
+    [transaction_id] => 20696
+    [cashier_id] => 2
+    [subtotal] => 80
+    [vat] => 9.6
+    [total] => 89.6
+    [payment_method] => cash
+    [amount_tendered] => 100
+    [change_amount] => 10.4
+    [discount_type] => none
+    [discount_amount] => 0
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 10
+                    [product_name] => Piatos
+                    [quantity] => 4
+                    [price] => 20
+                    [original_price] => 20
+                    [discount_applied] => 
+                )
+
+        )
+
+)
